@@ -1,4 +1,4 @@
 ---
-author: Katheryn Fox
+author: Narayan Panthi
 title: Blog
 ---
