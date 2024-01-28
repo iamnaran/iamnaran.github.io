@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Home'
 theme = 'blist'
 metaDataFormat = "yaml"
+canonifyURLs = true
+canonifyURL = true
 
 DefaultContentLanguage = "en"
 DefaultContentLanguageInSubdir = true
@@ -14,8 +16,8 @@ DefaultContentLanguageInSubdir = true
     [languages.en.params]
       introTitle = "Hey! I'm Narayan Panthi"
       introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
-      introPhoto = "https://github.com/iamnaran/iamnaran.github.io/blob/0758fb43e0e2a91e812a6fa16e81319aeaee844c/images/butterfly.JPG"
-      logo = "/images/blist-logo.png"
+      introPhoto = "butterflt.JPG"
+      logo = "blist-logo.png"
     [[languages.en.menu.main]]
         name = "Blog"
         url = "blog"
