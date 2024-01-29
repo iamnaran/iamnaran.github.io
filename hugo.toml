@@ -6,24 +6,20 @@ metaDataFormat = "yaml"
 canonifyURLs = true
 canonifyURL = true
 
-DefaultContentLanguage = "en"
-DefaultContentLanguageInSubdir = true
-[languages]
-  [languages.en]
+DefaultContentLanguageInSubdir = false
     contentDir = "content" #English
     weight = 1
-    languageName = "English"
-    [languages.en.params]
+    [params]
       introTitle = "Hey! I'm Narayan Panthi"
       introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
       introPhoto = "butterflt.JPG"
       logo = "blist-logo.png"
-    [[languages.en.menu.main]]
+    [[menu.main]]
         name = "Blog"
         url = "blog"
         weight = 1
 
-    [[languages.en.menu.main]]
+    [[menu.main]]
         name = "About"
         url = "page/about/"
         weight = 2
