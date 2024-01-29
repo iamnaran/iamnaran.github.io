@@ -1,7 +1,7 @@
 baseURL = 'https://iamnaran.github.io/'
 hasCJKLanguage = true
 enableEmoji = true
-title = 'iTheme'
+title = 'Narayan Panthi'
 copyright = 'Narayan Panthi'
 theme = 'hugo-theme-itheme'
 paginate = 5
