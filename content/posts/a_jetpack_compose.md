@@ -1,12 +1,12 @@
 ---
-title: "Apple"
+title: "Jetpack Compose Android"
 date: 2023-02-27T13:06:38+08:00
-description: "Siri "
-author: "Apple Newsroom"
-tags: [ "Apple", "HomePod"]
+description: "The one and only jetpack compose series"
+author: "Narayan Panthi"
+tags: [ "Jetpack", "Android", "Login","Signup","Nested Graph"]
 theme: "light"
 featured: true
-cover: "https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg"
+cover: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*_oq8sLVW5nAhsEwyAxnA7w.jpeg"
 ---
 ![HomePod Apple](https://www.apple.com.cn/newsroom/images/product/homepod/standard/Apple-HomePod-hero-230118_big.jpg.large_2x.jpg)
 

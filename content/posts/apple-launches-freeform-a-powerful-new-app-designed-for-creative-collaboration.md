@@ -1,16 +1,16 @@
 ---
-title: 'Apple 推出为头脑风暴和创意协作设计的全新强大 app 无边记'
+title: 'Apple Apps'
 date: '2023-02-27T13:06:38+08:00'
-description: 'iPhone、iPad 及 Mac 版无边记让视觉化协作更轻松。'
+description: 'iPhone、iPad Mac '
 author: 'Apple Newsroom'
 cover: 'https://www.apple.com.cn/newsroom/images/product/apps/standard/Apple-Freeform-hero_big.jpg.large_2x.jpg'
-tags: ["新闻稿", "Apple", "无边记"]
+tags: ["", "Apple", ]
 theme: 'light'
 featured: false
 ---
-![无边记为 iPhone、iPad 和 Mac 提供了灵活多用的画布，在同一个地方汇聚对话主题、内容及灵感创意。](https://www.apple.com.cn/newsroom/images/product/apps/standard/Apple-Freeform-hero_big.jpg.large_2x.jpg)
+![ iPhone、iPad Mac ](https://www.apple.com.cn/newsroom/images/product/apps/standard/Apple-Freeform-hero_big.jpg.large_2x.jpg)
 
-无边记是一款全新 app，今日正式推出，包括 iOS、iPadOS 和 macOS 最新版本。无边记帮助用户在灵活多用的画布上管理并以视觉方式展示内容，在同一个地方查看、共享与协作，而不必考虑排版或页面大小问题。用户无需离开画板，即可添加不同类型的文件并实时预览。无边记为协作而设计，让用户更轻松地邀请他人在同一块白板上工作还能在 FaceTime 通话期间与他人协作。无边记白板存储在 iCloud 上，用户可以在不同设备间同步内容。
+  iOS、iPadOS 和 macOS 最新版本。无边记帮助用户在灵活多用的画布上管理并以视觉方式展示内容，在同一个地方查看、共享与协作，而不必考虑排版或页面大小问题。用户无需离开画板，即可添加不同类型的文件并实时预览。无边记为协作而设计，让用户更轻松地邀请他人在同一块白板上工作还能在 FaceTime 通话期间与他人协作。无边记白板存储在 iCloud 上，用户可以在不同设备间同步内容。
 
 “无边记为 iPhone、iPad 和 Mac 用户进行视觉化协作开启了无限可能。”Apple 全球产品营销副总裁 Bob Borchers 表示，“无边记带来了无边无际的画布，支持上传多种不同类型的文件，集成了 iCloud，还提供了诸多协作功能，为用户随时随地创建头脑风暴的共享空间。”
 

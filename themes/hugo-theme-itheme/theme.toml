@@ -1,14 +1,14 @@
-name = "iTheme"
+name = "NaTheme"
 license = "GPL-3.0"
-licenselink = "https://github.com/floyd-li/hugo-theme-itheme/blob/master/LICENSE"
-description = "An Apple's Style Theme"
-homepage = "https://github.com/floyd-li/hugo-theme-itheme"
-demosite = "https://hugo-theme-itheme.netlify.app"
-tags = ["apple","blog", "newsroom", "light", "dark"]
-features = ["blog", "apple", "newsroom"]
+licenselink = ""
+description = "NaTheme's Style Theme"
+homepage = ""
+demosite = ""
+tags = ["NaRan","NarayanPanthi", "android", "nepal", "dark"]
+features = ["blog", "android", "jetpack"]
 [author]
-  name = "Floyd Li"
-  homepage = "https://github.com/floyd-li"
+  name = "Naryan Panthi"
+  homepage = "https://github.com/iamnaran"
 [original]
   name = "austin2035"
   homepage = "https://astro.yufengbiji.com/"
