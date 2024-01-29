@@ -1,3 +1,23 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://iamnaran.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Narayan Panthi Writes'
+
+
+name = "Narayan Panthi Writes"
+license = "MIT"
+licenselink = "https://iamnaran.github.io/"
+description = "Lowkey Hugo theme is a simple and modern theme that is inspired by Adam Wathan's Blog."
+homepage = "https://iamnaran.github.io/"
+demosite = "https://iamnaran.github.io/"
+tags = ["simple", "minimal", "responsive", "blog", "personal", "light"]
+features = [
+  "responsive",
+  "single-column",
+  "blog",
+  "tailwindcss",
+]
+min_version = "0.110.0"
+
+[author]
+  name = "Narayan Panthi"
+  homepage = "https://iamnaran.github.io/"
