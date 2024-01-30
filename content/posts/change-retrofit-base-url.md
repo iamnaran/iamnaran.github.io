@@ -1,18 +1,16 @@
 ---
 title: "Change Retrofit Base URL on Runtime"
-date: 2023-03-25T15:04:53+08:00
+date: 2023-02-27T13:06:38+08:00
 description: "Switch between multiple base url like prod | dev in retrofit easily."
-draft: false
 author: "Narayan Panthi"
-cover: "https://miro.medium.com/v2/resize:fit:700/1*8IOK-CnOvbbyuYyCcwOPvA.png"
-tags: ["Retrofit","Base url","Runtime", "Android", "HILT", "Production]
+tags: [ "Retrofit", "BaseURL", "Runtime","Android","HILT"]
 theme: "light"
+featured: true
+cover: "https://miro.medium.com/v2/resize:fit:700/1*8IOK-CnOvbbyuYyCcwOPvA.png"
 ---
 
 
 # Change Retrofit Base URL on Runtime.
-
-
 
 Switch between multiple base url like prod | dev in retrofit easily.
 
