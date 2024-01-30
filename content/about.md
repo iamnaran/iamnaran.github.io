@@ -1,10 +1,74 @@
 ---
-title: '关于我们'
+title: 'About Me'
 plain: true
 theme: 'light'
 ---
-苹果公司（英语：Apple Inc.），原称苹果电脑公司（英语：Apple Computer, Inc.），是源自美国的跨国科技公司，总部位于美国加州的库比蒂诺，与亚马逊、谷歌、微软、Meta并列为五大科技巨擘。目前的业务包括设计、研发、手机通讯和销售消费电子、计算机软件、在线服务和个人计算机。
 
-1976年4月，史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗纳德·韦恩创立了苹果公司，目的是为了研发和销售沃兹尼亚克Apple I个人电脑，但韦恩12天后就放弃了自己的股份。1977年1月，正式确定公司名称为“苹果电脑公司”，包括Apple II在内的电脑销量迅速增长。几年之内，乔布斯和沃兹尼亚克就聘雇了一批电脑设计师，并拥有了一条生产线。1980年，苹果公司上市，迅速获得了财务上的成功。在接下来的几年里，苹果公司推出了具有图形用户界面的新电脑，如1984年推出的Macintosh 128K，同时苹果公司的产品营销广告得到广泛好评。然而，其产品的高单价和有限的应用程序引发了诸多问题，其高管之间的权力斗争不断。1985年，沃兹尼亚克离开了苹果公司，继续担任名誉雇员，而乔布斯和其他人则辞职成立了NeXT公司。1996年，苹果收购NeXT公司，贾伯斯于隔年重返苹果公司，率领苹果公司成为科技巨擘。
+# About Me
 
-该公司最著名的硬件产品有iPhone智能手机、iPad平板电脑、Mac个人电脑、iPod音乐播放器、Apple Watch智能手表、Apple TV媒体播放器 、AirPods无线耳机和HomePod智能音箱、游戏机 Pippin atmark ；软件有macOS、iOS、iPadOS、watchOS和tvOS五大操作系统、iTunes播放器、Safari网页浏览器 、Shazam音乐识别，还有iLife和iWork创意和生产力套件，以及Final Cut Pro、Logic Pro和Xcode等专业软件；在线服务有iTunes Store、iOS App Store、Mac App Store、Apple Music、Apple TV+、iMessage和iCloud。苹果公司还有其他一系列服务包括Apple Store、Genius Bar、AppleCare、Apple Pay、Apple Pay Cash和Apple Card等。
+
+
+### NARAYAN PANTHI - SOFTWARE ENGINEER
+Energetic and curiosity-driven software engineer & designer with 6 + years of experience in complex and challenging projects. Extensive expertise developing highly scalable applications using various technology stacks. Have a professional, friendly, and learning attitude with high performance driven
+job in the field of software development.
+````
+linkedin.com/iamnaran
+````
+#### Kathmandu, Nepal
+
+### EDUCATIONS
+
+#### St. Xavier’s College (2013 - 2018)
+```
+BSc. CSIT
+Bachelor of Science in Computer Science & Information Technology
+```
+
+### College Projects
+
+#### Virtual Tour of Bhimshen Tower (धरहरा)
+```
+We developed a 3D game (Unity/Blender) where the user controls a human
+character to virtually explore an ancient tower as part of our effort to virtualize cultural sites and monuments in order to conserve them for future generations.
+```
+#### We Care (Blood Request Platform - Android & Web )
+```
+A full blood donation program system with three levels of authorization to ask for or look up registered donors nearby the requester’s location.
+```
+
+## PROFESSIONAL SKILLS
+
+```
+
+```
+
+## WORK EXPERIENCES
+
+#### Treeleaf Tech. (2021 - 2023)
+#### Software Engineer III
+Guided a collaborative team, significantly enhancing productivity. Excelled in large codebases, implementing robust architectures like MVC/MVVM Clean, gRPC, MQTT, AR Core, WebRTC. Designed core features for Anydone Products, including Instant Messaging, A/V Call, AR Drawing, and more.
+
+````
+Projects
+AnyDone Desk | AnyDone Inbox | AnyDone Chat SDK
+````
+
+#### Freelancer (2019 - 202)
+
+#### Mobile Application Designer & Developer
+
+-Collaborated on a precision agriculture app and construction management system, achieving project objectives with remote teams. Engaged with professional developers and managed deliverables effectively. Worked with external teams such as The Innovia Group LLC, StoneStep, Search Solution, and TeamOne Tech to meet product requirements.
+```
+Projects
+E-Library | Digital Palika | Construction Mangement System |The Community Cloud | Plant Satellite | Search Solution
+
+```
+#### inGrails Pvt Ltd (2017 - 2019)
+
+#### Software Developer
+
+Collaborated in a team environment, delivering software solutions for tablets and Android TV. Gained experience with Laravel and Flask in web technologies. Contributed to diverse client projects, including Eatery, Doko Recyclers Service App, Nepal Events, and Reversify. Implemented core features at Veda Apps, such as Real-Time GPS Tracking, School MIS, Automated Notification, FFMPEG Video Editor, QR Login, and more.
+```
+Projects
+Veda | Veda Guru | Doko Recyclers | Nepal Events | Reversify
+```
