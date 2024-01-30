@@ -4,8 +4,6 @@ plain: true
 theme: 'light'
 ---
 
-# About Me
-
 
 
 ### NARAYAN PANTHI - SOFTWARE ENGINEER
@@ -14,17 +12,8 @@ job in the field of software development.
 ````
 linkedin.com/iamnaran
 ````
-#### Kathmandu, Nepal
 
-### EDUCATIONS
-
-#### St. Xavier’s College (2013 - 2018)
-```
-BSc. CSIT
-Bachelor of Science in Computer Science & Information Technology
-```
-
-### College Projects
+### First College Project
 
 #### Virtual Tour of Bhimshen Tower (धरहरा)
 ```
