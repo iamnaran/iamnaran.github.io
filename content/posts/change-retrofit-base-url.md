@@ -4,7 +4,7 @@ date: 2023-03-25T15:04:53+08:00
 description: "Switch between multiple base url like prod | dev in retrofit easily."
 draft: false
 author: "Narayan Panthi"
-cover: "https://images.pexels.com/photos/11035544/pexels-photo-11035544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+cover: "https://miro.medium.com/v2/resize:fit:700/1*8IOK-CnOvbbyuYyCcwOPvA.png"
 tags: ["Retrofit","Base url","Runtime", "Android", "HILT", "Production]
 theme: "light"
 ---
