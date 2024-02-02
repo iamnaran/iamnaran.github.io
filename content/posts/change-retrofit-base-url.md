@@ -70,6 +70,7 @@ annotationProcessor 'androidx.hilt:hilt-compiler:1.0.0'
 > App.java
 > with Dagger2 Hilt.
 
+````
 @HiltAndroidApp
 public class App extends Application {
 
