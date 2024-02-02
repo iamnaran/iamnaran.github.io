@@ -70,7 +70,7 @@ annotationProcessor 'androidx.hilt:hilt-compiler:1.0.0'
 > App.java
 > with Dagger2 Hilt.
 
-````
+```
 @HiltAndroidApp
 public class App extends Application {
 
@@ -87,16 +87,14 @@ public class App extends Application {
         MultiDex.install(this);
     }
 }
+```
 
 Now, create a PreferenceHelper (SharedPrefManager) with two helper functions to read/write the status of current environment selection mode.
-
- // Store & Get Prod or Dev Environment  void  setProdEnvironmentStatus(boolean status); boolean  isProdEnvironment();
-
+Store & Get Prod or Dev Environment  void  setProdEnvironmentStatus(boolean status); boolean  isProdEnvironment();
 Then, create  **Interceptor**  to handle the switching environment work. 😮
-
 For default base url, Retrofit is injected with DEVELOPMENT_BASE_URL assuming default selection for application.
 
-````
+```
 @Provides
 @Singleton
 public Retrofit provideRetrofitClient(ProtoConverterFactory protoConverterFactory, RxJava3CallAdapterFactory rxJava3CallAdapterFactory, OkHttpClient okHttpClient) {return new Retrofit.Builder()
@@ -106,21 +104,21 @@ public Retrofit provideRetrofitClient(ProtoConverterFactory protoConverterFactor
             .addCallAdapterFactory(rxJava3CallAdapterFactory)
             .build();
 }
-````
+```
 
 **NOW**  provide  **HostSelectionInterceptor**  dependency to hilt in NetworkModule.java as,
 
-````
+```
 @Provides
 @Singleton
 public HostSelectionInterceptor provideHostSelectionInterceptor(PreferenceHelper preferenceHelper) {
     return new HostSelectionInterceptor(preferenceHelper);
 }
-````
+```
 
 Then, provide this interceptor to our OkHttpClient Builder like below.
 
-````
+```
 @Provides
 @Singleton
 public OkHttpClient provideOkHttpClient(@ApplicationContext Context context, HttpLoggingInterceptor httpLoggingInterceptor, HostSelectionInterceptor hostSelectionInterceptor) {
@@ -151,14 +149,14 @@ public OkHttpClient provideOkHttpClient(@ApplicationContext Context context, Htt
     }
 
 }
-````
+```
 
 Now, We can  **INJECT**  **HostSelectionInterceptor**  in our viewmodel or activity by simply providing @**Inject**  annotation.
 
-````
+```
 @Inject
     HostSelectionInterceptor hostSelectionInterceptor;
-    ```
+```
 
 **Finally**, we can switch between these environment in just by changing selection mode status on shared Preference and recalling our  **setHostBaseUrl**  function in  **HostSelectionInterceptor**.
 
@@ -166,7 +164,7 @@ Now, We can  **INJECT**  **HostSelectionInterceptor**  in our viewmodel or activ
 
 Example on Spinner Switch for “DEV” & “PROD” environment.
 
-``
+```
 private void doSetupHostSelection() {
 
     ArrayAdapter<String> arrayAdapter = new CustomSpinnerAdapter(this).spinnerAdapter();
@@ -198,11 +196,11 @@ getViewDataBinding().spinnerHostSelection.setOnItemSelectedListener(new AdapterV
     });
 
 }
-````
+```
 
 This function  **setHostBaseUrl**  will do rest of the work.
 
-````
+```
 public void setHostBaseUrl() {
     if (preferenceHelper.isProdEnvironment()) {
         this.host = HttpUrl.parse(BuildConfig.PRODUCTION_BASE_URL);
@@ -210,7 +208,7 @@ public void setHostBaseUrl() {
         this.host = HttpUrl.parse(BuildConfig.DEVELOPMENT_BASE_URL);
     }
 }
-````
+```
 
 That’s all…. Thank you for reading…
 
