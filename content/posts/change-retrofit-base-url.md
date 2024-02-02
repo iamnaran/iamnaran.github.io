@@ -24,12 +24,14 @@ Hey there! Great to have you on board. In this article, we’ll walk through a q
 
 We instantiate the Retrofit instance by providing default base url.
 
+```
 return new Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl(BuildConfig.PRODUCTION_BASE_URL)
             .addConverterFactory(-)
             .addCallAdapterFactory(-)
             .build();
+```
 
 **Problem Report**
 

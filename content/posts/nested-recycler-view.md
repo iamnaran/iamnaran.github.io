@@ -11,7 +11,6 @@ theme: 'light'
 # Nested RecyclerView In Android
 
 
-
 ![](https://miro.medium.com/v2/resize:fit:1000/1*mqjP2dOzkxqs2iphhsxZ2Q.jpeg)
 
 Photo by Author — Ghandruk, Nepal
@@ -38,7 +37,7 @@ Pictures of Nested Recyclerview Samples- eLibrary, Spotify, Netflix
 
 **Just Give me all the Code 👇**
 
-[](https://github.com/iamnaran/template-recycler-view?source=post_page-----e5afb2b9771a--------------------------------)
+[](https://github.com/iamnaran/template-recycler-view)
 
 ## iamnaran/template-recycler-view
 
@@ -78,28 +77,29 @@ Now, Create an API Service to get a response from the  **API**.
 > [https://game-of-thrones-quotes.herokuapp.com/v1/**houses**](https://game-of-thrones-quotes.herokuapp.com/v1/houses)
 
 Start by breaking down our URL into  **BASE_URL**  &  **End Points.**
-
+```
 buildConfigField 'String', 'BASE_URL', "\"https://game-of-thrones-quotes.herokuapp.com/v1/\""
-
+```
 > **ApiEndPoints.kt**
-
+```
 object ApiEndPoints {  
 
    const val GAME_OF_THRONES_URL = "houses"  
 
 }
-
+```
 > **ApiService.kt**
-
+```
 interface ApiService {  
 
     @GET(ApiEndPoints.GAME_OF_THRONES_URL)  
     suspend fun getGameOfThronesData():Response<List<GameOfThrones>>  
 }
-
+```
 Now, Let’s create  **ViewModel**  to get a response from the above API service.
 
 > **HomeViewModel.kt**
+
 
 Here,  **HomeRepository** acts as a repository class to get our response &  **PreferencesHelper** acts as a helper class to store data in  **SharedPreference**. You can see the project repository to understand it more clearly.
 
@@ -122,7 +122,7 @@ Here, We will need three layouts,
 Three Layouts (1–2–3): Activity, Parent Item & Child Item
 
 > **1. activity_home.xml**
-````
+```
 <?xml version="1.0" encoding="utf-8"?>  
 <androidx.core.widget.NestedScrollView  
     xmlns:android="http://schemas.android.com/apk/res/android"  
@@ -158,9 +158,10 @@ Three Layouts (1–2–3): Activity, Parent Item & Child Item
             app:layout_constraintTop_toBottomOf="@+id/title_layout" />  
     </androidx.constraintlayout.widget.ConstraintLayout>  
 </androidx.core.widget.NestedScrollView>
-````
+```
 > **2. item_row_parent.xml**
-````
+
+```
 <?xml version="1.0" encoding="utf-8"?>  
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"  
     xmlns:app="http://schemas.android.com/apk/res-auto"  
@@ -204,9 +205,11 @@ Three Layouts (1–2–3): Activity, Parent Item & Child Item
     </androidx.constraintlayout.widget.ConstraintLayout>  
 
 </androidx.cardview.widget.CardView>
-````
+```
+
 > **3. item_row_child.xml**
-````
+
+```
 <?xml version="1.0" encoding="utf-8"?>  
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"  
     xmlns:app="http://schemas.android.com/apk/res-auto"  
@@ -234,7 +237,8 @@ Three Layouts (1–2–3): Activity, Parent Item & Child Item
     </androidx.constraintlayout.widget.ConstraintLayout>  
 
 </androidx.cardview.widget.CardView>
-````
+```
+
 # Step 3— Setting up Adapter Classes
 
 Several different classes work together to build our dynamic list. Here we have two  **recyclerviews**, which means we need two adapters. You define the adapter by extending  `[RecyclerView.Adapter](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.Adapter)`. You define the view holder by extending  `[RecyclerView.ViewHolder](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView.ViewHolder)`. The  _layout manager_  arranges the individual elements in your list.
@@ -248,108 +252,141 @@ A Parent-Child Illustration **👉**
 Let's start by creating a child members adapter, where we will plot a list of  **members** from each house**.**
 
 > **ChildMembersAdapter.kt**
-
-Now, Let’s work on our  **ParentHouseAdapter**, the parent  **recyclerview**  adapter from which we will call our child adapter like below.
-````
-fun bind(result: GameOfThrones) {  
-    itemView.content_title.text = result.name  
-    val  childMembersAdapter = ChildMembersAdapter(result.members)  
-    itemView.child_recycler_view.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL,false)  
-    itemView.child_recycler_view.adapter = childMembersAdapter  
-
-}
-````
-
-> **ParentHouseAdapter.kt**
-````
+```
 package com.template.androidtemplate.ui.home.adapter
 
 import android.view.LayoutInflater
-
 import android.view.View
-
 import android.view.ViewGroup
-
-import androidx.recyclerview.widget.LinearLayoutManager
-
 import androidx.recyclerview.widget.RecyclerView
-
 import com.template.androidtemplate.R
-
 import com.template.androidtemplate.data.model.GameOfThrones
+import kotlinx.android.synthetic.main.item_row_child.view.*
 
+open class ChildMembersAdapter(var memberData: List<GameOfThrones.Member>) :
+    RecyclerView.Adapter<ChildMembersAdapter.DataViewHolder>() {
+
+    private var membersList: List<GameOfThrones.Member> = ArrayList()
+
+    init {
+        this.membersList = memberData
+    }
+
+    var onItemClick: ((String) -> Unit)? = null
+
+    inner class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        init {
+            itemView.setOnClickListener {
+                onItemClick?.invoke(membersList[adapterPosition].name)
+            }
+        }
+
+        fun bind(result: GameOfThrones.Member) {
+            itemView.name.text = result.name
+
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = DataViewHolder(
+        LayoutInflater.from(parent.context).inflate(
+            R.layout.item_row_child, parent,
+            false
+        )
+    )
+
+    override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
+        holder.bind(membersList[position])
+    }
+
+    override fun getItemCount(): Int = membersList.size
+
+
+}
+```
+
+Now, Let’s work on our  **ParentHouseAdapter**, the parent  **recyclerview**  adapter from which we will call our child adapter like below.
+
+```
+fun bind(result: GameOfThrones) {
+    itemView.content_title.text = result.name
+    val  childMembersAdapter = ChildMembersAdapter(result.members)
+    itemView.child_recycler_view.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL,false)
+    itemView.child_recycler_view.adapter = childMembersAdapter
+
+}
+```
+
+> **ParentHouseAdapter.kt**
+
+```
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.template.androidtemplate.R
+import com.template.androidtemplate.data.model.GameOfThrones
 import kotlinx.android.synthetic.main.item_row_parent.view.*
 
+
 open class ParentHouseAdapter :
+    RecyclerView.Adapter<ParentHouseAdapter.DataViewHolder>() {
 
-RecyclerView.Adapter<ParentHouseAdapter.DataViewHolder>() {
+    var gameOfThronesHouseList: List<GameOfThrones> = ArrayList()
 
-var gameOfThronesHouseList: List<GameOfThrones> = ArrayList()
 
-var onItemClick: ((GameOfThrones) -> Unit)? = null
+    var onItemClick: ((GameOfThrones) -> Unit)? = null
 
-inner class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        init {
+            itemView.setOnClickListener {
+                onItemClick?.invoke(gameOfThronesHouseList[adapterPosition])
 
-init {
+            }
 
-itemView.setOnClickListener {
 
-onItemClick?.invoke(gameOfThronesHouseList[adapterPosition])
+        }
 
-}
+        fun bind(result: GameOfThrones) {
+            itemView.content_title.text = result.name
+            val childMembersAdapter = ChildMembersAdapter(result.members)
+            itemView.child_recycler_view.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL,false)
+            itemView.child_recycler_view.adapter = childMembersAdapter
 
-}
+        }
 
-fun bind(result: GameOfThrones) {
+    }
 
-itemView.content_title.text = result.name
 
-val childMembersAdapter = ChildMembersAdapter(result.members)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = DataViewHolder(
+        LayoutInflater.from(parent.context).inflate(
+            R.layout.item_row_parent, parent,
+            false
+        )
+    )
 
-itemView.child_recycler_view.layoutManager = LinearLayoutManager(itemView.context, LinearLayoutManager.HORIZONTAL,false)
+    override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
+        holder.bind(gameOfThronesHouseList[position])
+    }
 
-itemView.child_recycler_view.adapter = childMembersAdapter
+    override fun getItemCount(): Int = gameOfThronesHouseList.size
 
-}
 
-}
+    fun addData(list: List<GameOfThrones>) {
+        gameOfThronesHouseList = list
+        notifyDataSetChanged()
+    }
 
-override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = DataViewHolder(
-
-LayoutInflater.from(parent.context).inflate(
-
-R.layout.item_row_parent, parent,
-
-false
-
-)
-
-)
-
-override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
-
-holder.bind(gameOfThronesHouseList[position])
-
-}
-
-override fun getItemCount(): Int = gameOfThronesHouseList.size
-
-fun addData(list: List<GameOfThrones>) {
-
-gameOfThronesHouseList = list
-
-notifyDataSetChanged()
 
 }
 
-}
-````
+```
 
 # Final Step — Integrate Adapter In View
 
 We have our adapter ready, In our  **Activity,** we are observing the  **API response,** we will add data to the adapter after we get a response from it.
 
-````
+```
 package com.template.androidtemplate.ui.home.view
 
 import android.os.Bundle
@@ -455,7 +492,7 @@ parentHouseAdapter.notifyDataSetChanged()
 }
 
 }
-````
+```
 
 Finally, We can now see all the houses with their members,
 
