@@ -10,7 +10,7 @@ theme: 'light'
 
 ![](https://cdn-images-1.medium.com/max/1200/1*wfg1qr9XPKWTYentA2QRSQ.jpeg)
 
-# Nested Navigation with Bottom Navigationthat supports Mutiple Back Stack.
+# Nested Navigation with Bottom Navigation that supports Mutiple Back Stack.
 
 💥 Hello, In this article we are going to implement a nested  **navigation with multiple back stack.**
 We will learn how exactly nested  **navigation** are made.
@@ -18,7 +18,7 @@ We will learn how exactly nested  **navigation** are made.
 
 **Just Give me all the Code 👇**
 
-[](https://gist.github.com/iamnaran/9532569e335cd346412e61b5dbe6feda)
+[Github Link](https://gist.github.com/iamnaran/9532569e335cd346412e61b5dbe6feda)
 
 Certainly! Imagine building an app with a login feature and a bottom navigation menu. In such a scenario, nested navigation is essential. Why? Because we want two start destinations: first, show the login page when the user opens the app, and after logging in, display the bottom navigation page. The bottom navigation itself has its start destinations like "Home," "Notification," and "Profile."
 
