@@ -1,7 +1,7 @@
 ---
 title: 'Aaradhya Tripathee'
 date: '2024-01-17T13:06:38+08:00'
-description: 'Testing by aaradhya'
+description: 'My Personal Blog'
 author: 'Narayan Panthi'
 cover: 'https://cdn-images-1.medium.com/max/800/1*Fez8vMtIbO-Bm3mr1qGFOA.jpeg'
 tags: ["Personal Blog", "Aaradhya", "Tripatheee", "Daily Blog"]
