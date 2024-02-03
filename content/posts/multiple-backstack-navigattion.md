@@ -1,7 +1,7 @@
 ---
 title: 'Multiple Back Stack Navigation in Jetpack Compose'
 date: '2024-01-17T13:06:38+08:00'
-description: 'A perfect professional guide for Nested Navigation that supports Multiple BackStacks'
+description: 'Nested Navigation with Bottom Navigation that supports Multiple BackStacks'
 author: 'Narayan Panthi'
 cover: 'https://cdn-images-1.medium.com/max/1200/1*wfg1qr9XPKWTYentA2QRSQ.jpeg'
 tags: ["Android", "Mutiple BackStack Navigation", "Jetpack Compose", "Nested Navigation"]
@@ -277,5 +277,8 @@ Hence, we can use this techniqmique to add mutiple backstack with nested navigat
 Thank you… Goodbye....
 Happy Readings....
 
+
+<meta name="description" content="Nested Navigation with Bottom Navigation that supports Multiple BackStacks in Jetpack Compose">
+<meta name="keywords" content="Android, Mutiple BackStack Navigation, Jetpack Compose, Nested Navigation">
 
 
