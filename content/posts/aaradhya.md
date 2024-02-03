@@ -13,6 +13,4 @@ theme: 'light'
 
 
 # Welcome to Aaradhya Tripathee's Blog
-My name is aaradhya tripathee. I am 8 years old. I read in Sifal Secondary School. My favourite
-subjects are English, Nepali, Science, Hamro Serofero, Maths etc. My father name is Amrish Tripathee and
-My mother name is Radha Panthi Tripathee. I love going to school. 
+Hello! I'm Aaradhya Tripathi, and I'm 8 years old. I go to Sifal Secondary School, and my favorite subjects are English, Nepali, Science, Hamro Serofero, Maths, and more. My dad's name is Amrish Tripathi, and my mom's name is Radha Panthi Tripathi. I really enjoy going to school!
