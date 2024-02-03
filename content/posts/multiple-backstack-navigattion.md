@@ -280,5 +280,7 @@ Happy Readings....
 
 <meta name="description" content="Nested Navigation with Bottom Navigation that supports Multiple BackStacks in Jetpack Compose">
 <meta name="keywords" content="Android, Mutiple BackStack Navigation, Jetpack Compose, Nested Navigation">
-
+<meta property="og:title" content="Multiple BackStacks in Jetpack Compose" />
+<meta property="og:description" content="Nested Navigation with Bottom Navigation that supports Multiple BackStacks in Jetpack Compose" />
+<meta property="og:type" content="article" />
 
