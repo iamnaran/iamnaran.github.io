@@ -31,8 +31,7 @@ I hope this clarifies things! Feel free to ask if you have any questions.
 
 # Step 1 — Create a AuthNavGraph.kt
 
-It is our first navigation graph. It will consist all the navigation before the authentication like,
-LoginScreen Steps, Registration Steps, Forgot password, etc.
+This is our initial navigation graph, encompassing all the steps before authentication, such as LoginScreen, Registration Steps, Forgot Password, and more.
 
 ```
 fun NavGraphBuilder.authNavGraph(navController: NavHostController) {
@@ -70,7 +69,7 @@ fun NavGraphBuilder.authNavGraph(navController: NavHostController) {
 
 # Step 2 — Create a BottomBar.kt
 
-It is our bottom navigation bar it contains, HomeScreen, NotificationScreen, ProfileScreen. 
+This represents our bottom navigation bar, including distinct screens for Home, Notifications, and Profile functionalities.
 
 ```
 @Composable
@@ -123,7 +122,7 @@ fun BottomBar(
 
 # Step 3 — Create a ChildNavHost.kt
 
-It is our navigation host as we need mutiple back stack for each of the bottom navigation item--- Home Nav Host
+This serves as our navigation host, accommodating multiple back stacks for each specific item in the bottom navigation, such as the Home Nav Host, Notification Nav Host and Profile Nav Host
 
 ```
 @Composable
@@ -228,7 +227,7 @@ fun NavGraphBuilder.mainNavGraph(rootNavController: NavHostController) {
 
 # Step 5 — Create a RootNavHost.kt
 
-And, it is our root navigation host its will contains our navigation with a navhost
+Defining the navigation structure for of our Navigation. which enables nested navigations
 
 ```
 @Composable
