@@ -4,7 +4,7 @@ date: '2024-01-17T13:06:38+08:00'
 description: 'Testing by aaradhya'
 author: 'Narayan Panthi'
 cover: 'https://cdn-images-1.medium.com/max/800/1*Fez8vMtIbO-Bm3mr1qGFOA.jpeg'
-tags: ["Android", "Mutiple BackStack Navigation", "Jetpack Compose", "Nested Navigation"]
+tags: ["Personal Blog", "Aaradhya", "Tripatheee", "Daily Blog"]
 theme: 'light'
 ---
 
