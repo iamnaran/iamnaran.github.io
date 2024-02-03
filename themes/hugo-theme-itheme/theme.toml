@@ -10,9 +10,9 @@ features = ["blog", "android", "jetpack"]
   name = "Naryan Panthi"
   homepage = "https://github.com/iamnaran"
 [original]
-  name = "austin2035"
-  homepage = "https://astro.yufengbiji.com/"
-  repo = "https://github.com/austin2035/astro-air-blog"
+  name = "iamnaran"
+  homepage = "https://github.com/iamnaran"
+  repo = "https://github.com/iamnaran"
 [module]
   [module.hugoVersion]
     min = "0.93.0"
