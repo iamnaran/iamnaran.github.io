@@ -3,13 +3,13 @@ title: 'Aaradhya Tripathee'
 date: '2024-01-17T13:06:38+08:00'
 description: 'Testing by aaradhya'
 author: 'Narayan Panthi'
-cover: 'https://drive.google.com/file/d/1ijgJDDzo-GZNb-AKs7xiSQ3jaZRIppxk/view'
+cover: 'https://cdn-images-1.medium.com/max/800/1*Fez8vMtIbO-Bm3mr1qGFOA.jpeg'
 tags: ["Android", "Mutiple BackStack Navigation", "Jetpack Compose", "Nested Navigation"]
 theme: 'light'
 ---
 
 
-![](https://drive.google.com/file/d/1ijgJDDzo-GZNb-AKs7xiSQ3jaZRIppxk/view)
+![](https://cdn-images-1.medium.com/max/800/1*Fez8vMtIbO-Bm3mr1qGFOA.jpeg)
 
 
 # Welcome to Aaradhya Tripathee's Blog
