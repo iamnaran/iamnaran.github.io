@@ -534,7 +534,7 @@ _Also, tell recyclerview your item has a unique ID. This will reduce the blinkin
 
 `parentAdapter.setHasStableIds(true)`
 
-4. **Use RecycledViewPool**
+**4. Use RecycledViewPool**
 
 It lets you share Views between multiple RecyclerViews. If you want to recycle views across RecyclerViews, create an instance of RecycledViewPool and use  `[setRecycledViewPool]
 (https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView#setRecycledViewPool(androidx.recyclerview.widget.RecyclerView.RecycledViewPool))`.
