@@ -8,4 +8,6 @@ tags: ["Android", "Mutiple BackStack Navigation", "Jetpack Compose", "Nested Nav
 theme: 'light'
 ---
 
-# my name is aaradhya tripathee 
+# My name is aaradhya tripathee. I am 8 years old . I read in Sifal Secondary School. My favourite
+subjects are English, Nepali, Science, Hamro Serofero, Maths etc. My father name is Amrish Tripathee and
+My mother name is Radha Panthi Tripathee. I love going to school. 
